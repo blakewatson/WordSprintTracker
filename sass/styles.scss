@@ -1,0 +1,89 @@
+@import "bourbon/bourbon";
+@import "alertify.core";
+@import "alertify.bootstrap";
+@import "bootstrap.min";
+@import "bootstrap-responsive.min";
+
+h4 {
+	margin-bottom: 21px;
+}
+
+.hidden {
+	display: none;
+}
+
+.progress {
+	height: 50px;
+}
+
+.bar {
+	width: 0;
+}
+
+.sprints,
+.novelists {
+	h4 {
+		float: left;
+		margin-right: 20px;
+	}
+}
+
+.new-sprint,
+.new-novelist {
+	margin-top: 4px;
+	margin-bottom: 10px;
+}
+
+.novelists {
+	th {
+		font-weight: normal;
+		color: #0b8bcb;
+		&:nth-child(1),
+		&:nth-child(3),
+		&:nth-child(4) {
+			text-align: right;
+		}
+	}
+}
+
+.novelist {
+	.rank {
+		width: 15%;
+		text-align: right;
+	}
+	.wc {
+		width: 25%;
+		text-align: right;
+	}
+	.wc_total {
+		width: 22%;
+		text-align: right;
+	}
+	.icon-remove {
+		margin-left: 10px;
+		opacity: 0.18;
+	}
+}
+
+.overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	padding-top: 19.5%;
+	background: #000;
+	color: #fff;
+	text-align: center;
+	&.red {
+		background: #e31515;
+	}
+	.timer {
+		margin-bottom: 40px;
+	}
+	.time {
+		font-size: 244px;
+		line-height: 1em;
+		font-weight: bold;
+	}
+}

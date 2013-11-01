@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Word Sprint Tracker</title>
+		<link rel="stylesheet" href="css/styles.css" />
+		<script src="js/jquery-1.10.2.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/jquery.xml2json.js"></script>
+		<script src="js/alertify.js"></script>
+		<script src="js/wordsprint.js"></script>	
+	</head>
+	
+	<body>
+		<div class="container">
+			<div class="page-header">
+				<h1>Word Sprint Tracker</h1>
+			</div>
+			<div class="row">
+				<div class="total-progress span12">
+					<h4>Total Progress:</h4>
+					<div class="progress">
+						<div class="bar"></div>
+					</div>
+					<p class="lead"><b class="twc"></b> of <b class="goal"> goal</b> <span class="change-goal btn btn-link">Change Goal</span></p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="sprints span6">
+					<h4>Sprints</h4>
+					<div class="new-sprint">
+						<p class="btn">New Sprint</p>
+					</div>
+					<table class="table">
+						<tbody></tbody>
+					</table>
+				</div>
+				<div class="novelists span6">
+					<h4>Novelists</h4>
+					<div class="new-novelist">
+						<p class="btn">New Novelist</p>
+					</div>
+					<table class="table">
+						<tbody></tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+		<div class="overlay hidden">
+			<div class="timer">
+				<p class="time"></p>
+				<p class="cancel-sprint btn btn-inverse btn-mini">Cancel</p>
+			</div>
+			<div class="refresh hidden">
+				<p class="message lead">Update your word counts on the NaNoWriMo website and then press this button:</p>
+				<p class="btn btn-inverse btn-large">Count It!</p>
+			</div>
+		</div>
+	</body>
+	
+</html>
